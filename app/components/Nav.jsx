@@ -1,18 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Nav extends Component {
-  render() {
-    return (
-      <h1 style={styles.navContainer}>Navigation</h1>
-    );
-  }
-}
-
-const styles = {
-  navContainer: {
-    flex: 1,
-    backgroundColor: 'grey'
-  }
+const Nav = (props) => {
+  return (
+    <h1>Navigation</h1>
+  );
 };
 
 export default Nav;
