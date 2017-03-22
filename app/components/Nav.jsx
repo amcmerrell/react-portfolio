@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Nav = (props) => {
+const Nav = () => {
   return (
     <div className='nav-container'>
       <h1>Navigation</h1>

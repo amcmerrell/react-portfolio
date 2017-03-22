@@ -11278,7 +11278,7 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Nav = function Nav(props) {
+var Nav = function Nav() {
   return _react2.default.createElement(
     'div',
     { className: 'nav-container' },
@@ -11458,7 +11458,7 @@ exports = module.exports = __webpack_require__(87)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  margin: 0;\n  display: flex;\n  flex-direction: column;\n  flex: 1; }\n\n#app h1 {\n  margin: 0; }\n\n#app .nav-container {\n  background: lightgreen; }\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  display: flex;\n  flex-direction: column;\n  flex: 1; }\n\n#app h1 {\n  margin: 0; }\n\n#app .nav-container {\n  background: lightgreen; }\n\n#app .feature-container {\n  background: lightblue;\n  height: 100vh; }\n", ""]);
 
 // exports
 
@@ -24288,13 +24288,53 @@ var _Nav = __webpack_require__(82);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
+var _Feature = __webpack_require__(189);
+
+var _Feature2 = _interopRequireDefault(_Feature);
+
 var _app = __webpack_require__(84);
 
 var _app2 = _interopRequireDefault(_app);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(_Nav2.default, null), document.getElementById('app'));
+_reactDom2.default.render(_react2.default.createElement(
+  'div',
+  null,
+  _react2.default.createElement(_Nav2.default, null),
+  _react2.default.createElement(_Feature2.default, null)
+), document.getElementById('app'));
+
+/***/ },
+/* 189 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(52);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Feature = function Feature() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'feature-container' },
+    _react2.default.createElement(
+      'h1',
+      null,
+      'Feature'
+    )
+  );
+};
+
+exports.default = Feature;
 
 /***/ }
 /******/ ]);
