@@ -9478,7 +9478,7 @@ var Nav = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'h1',
-        null,
+        { style: styles.navContainer },
         'Navigation'
       );
     }
@@ -9486,6 +9486,13 @@ var Nav = function (_Component) {
 
   return Nav;
 }(_react.Component);
+
+var styles = {
+  navContainer: {
+    flex: 1,
+    backgroundColor: 'grey'
+  }
+};
 
 exports.default = Nav;
 
