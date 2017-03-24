@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import classNames from 'classnames';
 
 class Nav extends Component {
   constructor(props) {
     super(props);
     this.state = {
       isLockedToTop: false,
+      isHidden: false,
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -22,17 +24,21 @@ class Nav extends Component {
     if (window.scrollY > 100) {
       this.setState({ isLockedToTop: true });
       console.log('unlocked');
-    } else if (window.scrollY <= 100) {
+    } else if (window.scrollY < 100) {
       this.setState({ isLockedToTop: false });
       console.log('locked');
     }
   }
 
   render() {
+    const navClass = classNames({
+      'locked-fade-in': this.state.isLockedToTop
+    });
+
     return (
-      <div className='nav-container' style={{ position: this.state.isLockedToTop ? 'fixed' : 'relative' }}>
+      <nav className={navClass} >
         <h1>Navigation</h1>
-      </div>
+      </nav>
     );
   }
 }
