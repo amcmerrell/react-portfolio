@@ -9,10 +9,27 @@ body {
   h1 {
     margin: 0;
   }
-  .nav-container {
-    background: lightgreen;
+
+  nav {
+    background: transparent;
     width: 100vw;
+    position: absolute;
+    top: 0px;
   }
+
+  .hidden-nav {
+    visibility: hidden;
+    opacity: 0.1;
+  }
+
+  .locked-fade-in {
+    background: 'lightgreen';
+    visibility: visible;
+    position: fixed;
+    opacity: 1;
+    transition: opacity 6s;
+  }
+
   .feature-container {
     background: lightblue;
     display: flex;
@@ -20,6 +37,7 @@ body {
     align-items: center;
     justify-content: center;
   }
+
   .subfeature-container {
     background: lightsalmon;
     display: flex;
