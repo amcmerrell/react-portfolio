@@ -12,18 +12,20 @@ body {
 
   nav {
     background: transparent;
+    //visibility: visible;
     width: 100vw;
+    opacity: 1;
     position: absolute;
     top: 0px;
   }
 
   .hidden-nav {
-    visibility: hidden;
+    //visibility: hidden;
     opacity: 0.1;
   }
 
   .locked-fade-in {
-    background: 'lightgreen';
+    background: lightgreen;
     visibility: visible;
     position: fixed;
     opacity: 1;

@@ -3,7 +3,8 @@ import classNames from 'classnames';
 
 const Nav = (props) => {
   const navClass = classNames({
-    'locked-fade-in': props.locked
+    'locked-fade-in': props.locked,
+    'hidden-nav': props.hidden
   });
 
   return (
