@@ -16,7 +16,7 @@ _Run the following commands in your terminal._
 
 ## Running the application
 * `watchman -w`
-* _In a new tab, run_ `npm install`
+* _In a new tab, run_ `node server.js`
 
 ## Support and contact details
 
