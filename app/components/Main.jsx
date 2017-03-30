@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 import Nav from './Nav';
 import Feature from './Feature';
 import SubFeature from './SubFeature';
@@ -9,7 +9,6 @@ class Main extends Component {
     super(props);
     this.state = {
       isNavLockedToTop: false,
-      isNavHidden: false,
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -25,16 +24,8 @@ class Main extends Component {
   handleScroll() {
     if (window.scrollY > 100) {
       this.setState({ isNavLockedToTop: true });
-    } else if (window.scrollY > 90 && window.scrollY < 100) {
-      this.handleNavTransition(this.state.isNavLockedToTop);
-    } else if (window.scrollY < 90) {
-      this.setState({ isNavHidden: false, isNavLockedToTop: false });
-    }
-  }
-
-  handleNavTransition(prevLockState) {
-    if (!prevLockState) {
-      this.setState({ isNavHidden: true });
+    } else if (window.scrollY <= 100) {
+      this.setState({ isNavLockedToTop: false });
     }
   }
 
@@ -43,7 +34,6 @@ class Main extends Component {
       <div>
         <Nav
           locked={this.state.isNavLockedToTop}
-          hidden={this.state.isNavHidden}
         />
         <Feature />
         <SubFeature />

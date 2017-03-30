@@ -12,24 +12,27 @@ body {
 
   nav {
     background: transparent;
-    //visibility: visible;
     width: 100vw;
     opacity: 1;
-    position: absolute;
-    top: 0px;
-  }
-
-  .hidden-nav {
-    //visibility: hidden;
-    opacity: 0.1;
-  }
-
-  .locked-fade-in {
-    background: lightgreen;
-    visibility: visible;
     position: fixed;
+    top: 0px;
+    transition: background 2s;
+    a {
+      float: left;
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      padding: 20px 20px;
+    }
+  }
+
+  .nav-fade-in {
+    background: lightgreen;
     opacity: 1;
-    transition: opacity 6s;
+    -webkit-transition: background 2s;
+    -moz-transition: background 2s;
+    -o-transition: background 2s;
+    transition: background 2s;
   }
 
   .feature-container {
