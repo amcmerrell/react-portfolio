@@ -36,8 +36,9 @@ module.exports = {
         loader: 'file-loader',
         options: {
           name: '[path][name].[hash].[ext]',
-        },
-      },
+        }
+      }
     ]
-  }
+  },
+  devtool: 'cheap-module-eval-source-map'
 };
