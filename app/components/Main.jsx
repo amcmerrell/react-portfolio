@@ -22,7 +22,6 @@ class Main extends Component {
   }
 
   handleScroll() {
-    debugger;
     if (window.scrollY > 100) {
       this.setState({ isNavLockedToTop: true });
     } else if (window.scrollY <= 100) {
