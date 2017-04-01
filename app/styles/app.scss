@@ -4,6 +4,8 @@ $secondary: #31393C;
 $primary-accent: #EB8921;
 $secondary-accent: #EF626C;
 
+$breakpoint-tablet: 768px;
+
 body {
   margin: 0;
   display: flex;
@@ -22,6 +24,8 @@ body {
     width: 100vw;
     opacity: 1;
     position: fixed;
+    display: flex;
+    flex-direction: row;
     top: 0px;
     transition: background 1s, border-color 1s;
 
@@ -32,10 +36,6 @@ body {
       padding: 0;
       margin: 0;
 
-      // @media screen and (max-width: 767px) {
-      //   flex-direction: column;
-      //   align-items: flex-end;
-      // }
     }
 
     a {
@@ -49,6 +49,18 @@ body {
       }
       &:active {
         color: $primary-accent;
+      }
+    }
+
+    .logo {
+      display: block;
+      margin: 0;
+      padding: 20px 20px;
+
+
+      h3 {
+        font-size: 20px;
+        margin: 0;
       }
     }
   }
@@ -82,5 +94,21 @@ body {
     height: 80vh;
     align-items: center;
     justify-content: center;
+  }
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    nav {
+      flex-direction: column;
+      background: $secondary;
+
+      ul {
+        flex-direction: column;
+      }
+    }
+
+    .logo {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 }

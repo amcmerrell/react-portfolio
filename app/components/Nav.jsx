@@ -22,6 +22,9 @@ class Nav extends Component {
     });
     return (
       <nav className={navClass} >
+        <div className='logo'>
+          <h3>AM</h3>
+        </div>
         <ul>
           <li>
             <a ref='home' onClick={this.onClick.bind(this, 'home')}>Home</a>
