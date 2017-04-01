@@ -31,10 +31,10 @@ body {
       text-align: center;
       font-size: 20px;
       padding: 20px 20px;
-      :hover {
+      &:hover {
         color: $primary-accent;
       }
-      :active {
+      &:active {
         color: $primary-accent;
       }
     }
@@ -67,7 +67,7 @@ body {
   }
 
   .subfeature-container {
-    background: lightsalmon;
+    background: $background;
     display: flex;
     height: 80vh;
     align-items: center;
