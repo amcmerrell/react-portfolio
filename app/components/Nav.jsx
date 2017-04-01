@@ -22,8 +22,16 @@ class Nav extends Component {
     });
     return (
       <nav className={navClass} >
-        <a ref='home' onClick={this.onClick.bind(this, 'home')}>Home</a>
-        <a ref='subFeature' onClick={this.onClick.bind(this, 'subFeature')}>About</a>
+        <ul>
+          <li>
+            <a ref='home' onClick={this.onClick.bind(this, 'home')}>Home</a>
+          </li>
+          <li>
+            <a ref='subFeature' onClick={this.onClick.bind(this, 'subFeature')}>About</a>
+          </li>
+        </ul>
+
+
       </nav>
     );
   }
