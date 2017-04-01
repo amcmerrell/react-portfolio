@@ -21,8 +21,8 @@ body {
   opacity: 1;
   position: fixed;
   top: 0px;
-  -webkit-transition: background 2s;
-  transition: background 2s; }
+  -webkit-transition: background 1s, border-color 1s;
+  transition: background 1s, border-color 1s; }
 
 #app nav a {
     color: #FBF6F7;
@@ -42,10 +42,8 @@ body {
   background: #31393C;
   border-bottom: 2px solid #EF626C;
   opacity: 1;
-  -webkit-transition: background 2s;
-  transition: background 2s;
-  -webkit-transition: border-color 1s linear 0s, color 1s;
-  transition: border-color 1s linear 0s, color 1s; }
+  -webkit-transition: background 1s, border-color 1s;
+  transition: background 1s, border-color 1s; }
 
 #app .feature-container {
   display: -webkit-box;
@@ -61,7 +59,7 @@ body {
 
 #app .parallax {
   background-image: url(./img/background.7a0c1bb3f0e8dc8ca2c4ff6a84c59d2a.jpg);
-  height: 100vh;
+  height: 200vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

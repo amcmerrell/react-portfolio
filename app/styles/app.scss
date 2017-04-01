@@ -23,7 +23,7 @@ body {
     opacity: 1;
     position: fixed;
     top: 0px;
-    transition: background 2s;
+    transition: background 1s, border-color 1s;
     a {
       color: $background;
       float: left;
@@ -44,11 +44,7 @@ body {
     background: $secondary;
     border-bottom: 2px solid $secondary-accent;
     opacity: 1;
-    -webkit-transition: background 2s;
-    -moz-transition: background 2s;
-    -o-transition: background 2s;
-    transition: background 2s;
-    transition: border-color 1s linear 0s, color 1s;
+    transition: background 1s, border-color 1s;
   }
 
   .feature-container {
@@ -60,7 +56,7 @@ body {
 
   .parallax {
     background-image: url('./../img/background.jpg');
-    height: 100vh;
+    height: 200vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
