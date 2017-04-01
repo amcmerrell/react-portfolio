@@ -10,7 +10,7 @@ class Nav extends Component {
     if (element === 'home') {
       SmoothScroll(home);
     } else if (element === 'subFeature') {
-      SmoothScroll(subFeature);
+      SmoothScroll(subFeature, 1500);
     }
 
     e.preventDefault();
