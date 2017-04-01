@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Nav from './components/Nav';
-import style from './../styles/app.scss';
+import style from './styles/app.scss';
+import Main from './components/Main';
 
 ReactDOM.render(
-  <Nav />,
+  <Main />,
   document.getElementById('app')
 );

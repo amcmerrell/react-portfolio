@@ -1,8 +1,10 @@
+const path = require('path');
+
 module.exports = {
   entry: './app/app.jsx',
   output: {
-    path: __dirname,
-    filename: './public/bundle.js'
+    path: path.join(__dirname, 'public'),
+    filename: 'bundle.js'
   },
   resolve: {
     root: __dirname,
@@ -21,9 +23,17 @@ module.exports = {
         exclude: /(node_modules|bower_components)/
       },
       {
+        test: /\.(jpg|png|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[hash].[ext]',
+        }
+      },
+      {
         loaders: ['style', 'css', 'sass'],
         test: /\.scss$/,
       },
     ]
-  }
+  },
+  devtool: 'cheap-module-eval-source'
 };

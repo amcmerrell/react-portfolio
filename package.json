@@ -4,9 +4,11 @@
   "description": "portfolio using react",
   "main": "index.js",
   "dependencies": {
+    "classnames": "^2.2.5",
     "express": "^4.15.2",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "smoothscroll": "^0.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
@@ -17,9 +19,11 @@
     "css-loader": "^0.27.3",
     "eslint": "^3.18.0",
     "eslint-config-rallycoding": "^3.2.0",
+    "file-loader": "^0.10.1",
     "node-sass": "^4.5.1",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.0",
+    "url-loader": "^0.5.8",
     "webpack": "v2.1.0-beta.22"
   },
   "scripts": {
