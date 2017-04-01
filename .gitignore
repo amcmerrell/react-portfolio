@@ -1,1 +1,3 @@
 bundle.js
+/public/**/*.jpg
+/public/*.css
