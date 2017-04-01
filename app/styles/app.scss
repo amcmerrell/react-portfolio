@@ -1,3 +1,9 @@
+$background: #FBF6F7;
+$primary: #00A4E3;
+$secondary: #31393C;
+$primary-accent: #EB8921;
+$secondary-accent: #EF626C;
+
 body {
   margin: 0;
   display: flex;
@@ -12,35 +18,52 @@ body {
 
   nav {
     background: transparent;
+    border-bottom: 2px solid transparent;
     width: 100vw;
     opacity: 1;
     position: fixed;
     top: 0px;
     transition: background 2s;
     a {
+      color: $background;
       float: left;
       display: block;
       text-align: center;
       font-size: 20px;
       padding: 20px 20px;
+      :hover {
+        color: $primary-accent;
+      }
+      :active {
+        color: $primary-accent;
+      }
     }
   }
 
   .nav-fade-in {
-    background: lightgreen;
+    background: $secondary;
+    border-bottom: 2px solid $secondary-accent;
     opacity: 1;
     -webkit-transition: background 2s;
     -moz-transition: background 2s;
     -o-transition: background 2s;
-    transition: background 2s;
+    transition: background border-color 2s;
   }
 
   .feature-container {
-    background-image: url('./../img/background.jpg');
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
+  }
+
+  .parallax {
+    background-image: url('./../img/background.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .subfeature-container {
