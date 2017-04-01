@@ -29,7 +29,7 @@
     "precss": "^1.4.0",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.0",
-    "webpack": "v2.1.0-beta.22"
+    "webpack": "v2.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

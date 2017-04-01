@@ -60,7 +60,7 @@ body {
           justify-content: center; }
 
 #app .parallax {
-  background-image: url(7a0c1bb3f0e8dc8ca2c4ff6a84c59d2a.jpg);
+  background-image: url(./img/background.7a0c1bb3f0e8dc8ca2c4ff6a84c59d2a.jpg);
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
