@@ -2,8 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import style from './styles/app.scss';
 import Main from './components/Main';
+import Nav from './components/Nav';
 
 ReactDOM.render(
-  <Main />,
+  <div>
+    <Nav />
+    <Main />
+  </div>,
   document.getElementById('app')
 );
