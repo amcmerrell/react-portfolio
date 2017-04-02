@@ -33,9 +33,11 @@ class Nav extends Component {
     const subFeature = document.querySelector('.subfeature-container');
 
     if (element === 'home') {
-      SmoothScroll(home);
+      SmoothScroll(home, 1500);
+      this.setState({ isMobileNavOpen: false });
     } else if (element === 'subFeature') {
       SmoothScroll(subFeature, 1500);
+      this.setState({ isMobileNavOpen: false });
     }
 
     e.preventDefault();
