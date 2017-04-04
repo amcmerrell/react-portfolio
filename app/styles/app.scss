@@ -5,7 +5,7 @@ $primary-accent: #EB8921;
 $secondary-accent: #EF626C;
 
 $breakpoint-tablet: 768px;
-$nav-text-padding: 20px;
+$nav-text-padding: 1.25rem;
 
 @font-face {
   font-family: 'Material Icons';
@@ -151,10 +151,14 @@ body {
         overflow: hidden;
         height: 0px;
         transition: height 1s;
+
+        li {
+          border-top: 1px solid $background;
+        }
       }
 
       .animate-nav-height {
-        height: 120px;
+        height: 8rem;
         transition: height 1s;
       }
 

@@ -8,9 +8,7 @@ const Feature = () => {
   });
 
   return (
-    <div className={featureClasses}>
-      <h1>Feature</h1>
-    </div>
+    <div className={featureClasses}></div>
   );
 };
 
