@@ -38,7 +38,60 @@ module.exports = {
           name: './img/[name].[hash].[ext]',
         }
       },
-    ],
+      {
+        test: /\.otf(\?\S*)?$/,
+          use: [{
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              name: './fonts/[name].[hash].[ext]'
+            }
+          }],
+      },
+      {
+        test: /\.eot(\?\S*)?$/,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            limit: 10000,
+            name: './fonts/[name].[hash].[ext]'
+          }
+        }]
+      },
+      {
+        test: /\.svg(\?\S*)?$/,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            mimetype: 'image/svg+xml',
+            limit: 10000,
+            name: './fonts/[name].[hash].[ext]'
+          }
+        }]
+      },
+      {
+        test: /\.ttf(\?\S*)?$/,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            mimetype: 'application/octet-stream',
+            limit: 10000,
+            name: './fonts/[name].[hash].[ext]'
+          }
+        }]
+      },
+      {
+        test: /\.woff2?(\?\S*)?$/,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            mimetype: 'application/font-woff',
+            limit: 10000,
+            name: './fonts/[name].[hash].[ext]'
+          }
+        }]
+      },
+    ]
   },
   plugins: [new ExtractTextPlugin('style.css')],
   devtool: 'cheap-module-eval-source'
