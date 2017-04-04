@@ -19,31 +19,6 @@ $nav-text-padding: 20px;
        url(./../fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
 
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-
 body {
   margin: 0;
   display: flex;
@@ -54,6 +29,31 @@ body {
 #app {
   h1 {
     margin: 0;
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
   }
 
   nav {
@@ -84,6 +84,7 @@ body {
       padding: $nav-text-padding $nav-text-padding;
       &:hover {
         color: $primary-accent;
+        cursor: pointer;
       }
       &:active {
         color: $primary-accent;
@@ -103,8 +104,7 @@ body {
       }
     }
 
-    .hamburger-menu {
-
+    .material-icons {
       display: none;
     }
   }
@@ -167,11 +167,21 @@ body {
       .logo {
         display: inherit;
       }
-
-      .hamburger-menu {
+      .material-icons {
         display: flex;
-        color: $background;
+        padding-top: $nav-text-padding;
         padding-right: $nav-text-padding;
+
+        &.hamburger-menu {
+          display: flex;
+          color: $background;
+          padding-right: $nav-text-padding;
+        }
+
+        &:hover {
+          color: $primary-accent;
+          cursor: pointer;
+        }
       }
     }
   }

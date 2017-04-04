@@ -43,7 +43,7 @@ class Nav extends Component {
     e.preventDefault();
   }
 
-  onMenuClick(e) {
+  onMobMenuClick(e) {
     if (this.state.isMobileNavOpen) {
       this.setState({ isMobileNavOpen: false });
     } else {
@@ -55,17 +55,31 @@ class Nav extends Component {
 
   render() {
     const navClass = classNames({
-      'nav-fade-in': this.state.isNavLockedToTop,
+      'nav-fade-in': this.state.isNavLockedToTop
     });
 
     const mobileNavClass = classNames({
       'animate-nav-height': this.state.isMobileNavOpen
     });
+
+    const mobileMenuClass = classNames({
+      'material-icons': true,
+      'hamburger-menu': true
+    });
+
     return (
       <nav className={navClass} >
-        <div className='logo' onClick={this.onMenuClick.bind(this)}>
-          <h3>AM</h3>
+        <div className='nav-header'>
+          <div className='logo'>
+            <h3>AM</h3>
+          </div>
+          <i
+            className={mobileMenuClass}
+            onClick={this.onMobMenuClick.bind(this)}>
+            menu
+          </i>
         </div>
+
         <ul className={mobileNavClass}>
           <li>
             <a ref='home' onClick={this.onNavClick.bind(this, 'home')}>Home</a>
@@ -74,8 +88,6 @@ class Nav extends Component {
             <a ref='subFeature' onClick={this.onNavClick.bind(this, 'subFeature')}>About</a>
           </li>
         </ul>
-
-
       </nav>
     );
   }
