@@ -167,6 +167,15 @@ body {
       text-align: center;
       color: $background;
 
+      &.feature-transition-appear {
+        opacity: 0;
+
+        &.feature-transition-appear-active {
+          opacity: 1;
+          transition: opacity 1500ms ease-in;
+        }
+      }
+
       img {
         height: 12em;
         width: 12em;
