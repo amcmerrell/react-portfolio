@@ -54,13 +54,22 @@ body {
   flex: 1;
   font-family: 'Open Sans';
 
+  h1, h2, h3, h4, h5 {
+    font-family: 'Open Sans';
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
 }
 
 #app {
-  h1, h2, h3, h4, h5 {
-    font-family: 'Roboto';
-    margin: 0;
-  }
 
   .material-icons {
     font-family: 'Material Icons';
@@ -153,6 +162,16 @@ body {
     height: 100vh;
     align-items: center;
     justify-content: center;
+
+    .feature {
+      text-align: center;
+      color: $background;
+
+      img {
+        height: 12em;
+        width: 12em;
+      }
+    }
   }
 
   .parallax {

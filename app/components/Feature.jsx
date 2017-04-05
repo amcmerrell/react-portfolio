@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import andrew from './../img/portfolio-andrew.png';
 
 const Feature = () => {
   const featureClasses = classNames({
@@ -8,7 +9,13 @@ const Feature = () => {
   });
 
   return (
-    <div className={featureClasses}></div>
+    <div className={featureClasses}>
+      <div className='feature'>
+        <img alt='Andrew Merrell' src={andrew} />
+        <h3>Andrew Merrell</h3>
+        <h4>Jr. Software Developer</h4>
+      </div>
+    </div>
   );
 };
 
