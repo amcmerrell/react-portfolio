@@ -14,6 +14,8 @@ const Feature = () => {
       <ReactCSSTransitionGroup
         transitionName='feature-transition'
         transitionAppear={true}
+        transitionEnter={false}
+        transitionLeave={false}
         transitionAppearTimeout={1500}
       >
         <div className='feature'>
