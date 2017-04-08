@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-//import ReactDOM from 'react-dom';
-import Nav from './Nav';
 import Feature from './Feature';
 import SubFeature from './SubFeature';
 

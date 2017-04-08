@@ -97,6 +97,7 @@ body {
   }
 
   nav {
+    z-index: 999;
     background: transparent;
     border-bottom: 2px solid transparent;
     width: 100vw;
@@ -164,16 +165,14 @@ body {
     justify-content: center;
 
     .feature {
+      opacity: 0;
       text-align: center;
       color: $background;
+      transition: opacity 1500ms ease-in;
 
-      &.feature-transition-appear {
-        opacity: 0;
-
-        &.feature-transition-appear-active {
-          opacity: 1;
-          transition: opacity 1500ms ease-in;
-        }
+      &.feature-transition {
+        opacity: 1;
+        transition: opacity 1500ms ease-in;
       }
 
       img {
