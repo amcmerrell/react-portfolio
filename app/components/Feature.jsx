@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import VisibilitySensor from 'react-visibility-sensor';
 import andrew from './../img/portfolio-andrew.png';
+import plaid from './../img/am-logo-plaid.png';
+import checker from './../img/am-logo-checker.png';
 
 class Feature extends Component {
   constructor(props) {
@@ -32,7 +34,7 @@ class Feature extends Component {
         <VisibilitySensor onChange={this.onChange} />
 
           <div className={featureClasses}>
-            <img alt='Andrew Merrell' src={andrew} />
+            <img alt='Andrew Merrell' src={plaid} />
             <h3>Andrew Merrell</h3>
             <h4>Jr. Software Developer</h4>
           </div>
