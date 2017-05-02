@@ -34,9 +34,9 @@ class Feature extends Component {
         <VisibilitySensor onChange={this.onChange} />
 
           <div className={featureClasses}>
-            <img alt='Andrew Merrell' src={plaid} />
+            <img alt='AM' src={plaid} />
             <h3>Andrew Merrell</h3>
-            <h4>Jr. Software Developer</h4>
+            <h4>Software Developer</h4>
           </div>
 
       </div>
