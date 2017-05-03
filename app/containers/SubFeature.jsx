@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import andrew from './../img/portfolio-andrew.png';
+import andrew from './../img/am_landscape.jpg';
 
 class SubFeature extends Component {
 
@@ -26,8 +26,8 @@ class SubFeature extends Component {
 
       <div className='subfeature-container'>
         <div className='subfeature-section'>
-          <img alt='Andrew Merrell' src={andrew} />
           <h2>About</h2>
+          <img alt='Andrew Merrell' src={andrew} />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus nisi eu neque cursus rhoncus. Maecenas interdum ullamcorper accumsan. Duis sem orci, pretium pretium consectetur a, eleifend eu lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
         </div>
 
@@ -90,11 +90,11 @@ class SubFeature extends Component {
               <div className='skills-container'>
                 <div className='skill-label'>
                   <i className={postgresIconClass} />
-                  <p>Java</p>
+                  <p>PostgreSQL</p>
                 </div>
                 <div className='skill-label'>
                   <i className={nodeIconClass} />
-                  <p>JavaScript</p>
+                  <p>NodeJS</p>
                 </div>
               </div>
             </div>
