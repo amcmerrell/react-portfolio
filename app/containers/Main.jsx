@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Feature from './../components/Feature';
-import SubFeature from './SubFeature';
+import SubFeature from './../components/SubFeature';
 
 class Main extends Component {
   render() {
