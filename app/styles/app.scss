@@ -319,9 +319,17 @@ body {
             }
           }
         }
-
       }
     }
+  }
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: $secondary;
+    text-align: center;
+    color: $background;
   }
 
   @media screen and (max-width: $breakpoint-tablet) {
