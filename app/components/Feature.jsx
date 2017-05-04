@@ -35,8 +35,8 @@ class Feature extends Component {
 
           <div className={featureClasses}>
             <img alt='AM' src={plaid} />
-            <h3>Andrew Merrell</h3>
-            <h4>Software Developer</h4>
+            <h1>Andrew Merrell</h1>
+            <h3>Software Developer</h3>
           </div>
 
       </div>

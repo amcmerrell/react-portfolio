@@ -61,7 +61,7 @@ body {
   font-family: 'Open Sans';
 
   h1, h2, h3, h4, h5 {
-    font-family: 'Open Sans';
+    font-family: 'Roboto';
     margin: .5em;
   }
 
@@ -176,7 +176,7 @@ body {
         line-height: 2.2em;
         border-radius: 50%;
         text-align: center;
-        background-color: $primary-accent;
+        background-color: $background;
         margin: 0;
       }
     }
@@ -214,6 +214,10 @@ body {
         height: 20em;
         width: 20em;
       }
+
+      h1, h3 {
+        margin: 0em;
+      }
     }
   }
 
@@ -237,9 +241,28 @@ body {
       text-align: center;
       padding: 2em;
 
+      h2 {
+        position: relative;
+
+        &:after {
+          display: block;
+          content: '';
+          width: 15%;
+          margin-left: 42.5%;
+          margin-bottom: -5px;
+          height: 2px;
+          background: $primary;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
       img {
         height: auto;
         width: 90%;
+        box-shadow: 5px 5px 5px grey;
+        border: 1px solid $secondary;
       }
 
       /* Skill types parent container */
@@ -254,6 +277,10 @@ body {
         .skill-type {
           flex: 50%;
           flex-direction: row;
+
+          h3 {
+            margin-top: 0;
+          }
 
           /* Skill containers */
           .skills-container {
@@ -343,6 +370,12 @@ body {
           cursor: pointer;
         }
       }
+    }
+
+    .subfeature-container {
+      background: $background;
+      display: flex;
+      flex-direction: column;
     }
   }
 }
