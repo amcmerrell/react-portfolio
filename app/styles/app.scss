@@ -9,6 +9,8 @@ $primary-accent: #EB8921;
 $secondary-accent: #EF626C;
 
 $breakpoint-tablet: 768px;
+$max-content-width: 1066px;
+$max-skills-width: 500px;
 $nav-text-padding: 1.2rem;
 $nav-logo-padding: 0.7rem;
 
@@ -67,7 +69,7 @@ body {
   }
 
   h1 {
-    font-size: 4.25em;
+    font-size: 4.5em;
   }
 
   h2 {
@@ -233,7 +235,7 @@ body {
 
   .subfeature-container {
     background: $background;
-    max-width: 1066px;
+    max-width: $max-content-width;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -390,7 +392,7 @@ body {
       flex-direction: column;
 
       .skills-main {
-        max-width: 500px;
+        max-width: $max-skills-width;
         margin-left: auto;
         margin-right: auto;
       }
