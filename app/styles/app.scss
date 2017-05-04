@@ -54,6 +54,7 @@ $nav-logo-padding: 0.7rem;
 
 body {
   margin: 0;
+  background: $background;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -232,6 +233,9 @@ body {
 
   .subfeature-container {
     background: $background;
+    max-width: 1066px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
 
@@ -376,6 +380,12 @@ body {
       background: $background;
       display: flex;
       flex-direction: column;
+
+      .skills-main {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 }
