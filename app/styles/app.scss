@@ -9,6 +9,7 @@ $primary-accent: #EB8921;
 $secondary-accent: #EF626C;
 
 $breakpoint-tablet: 768px;
+$breakpoint-phone: 640px;
 $max-content-width: 1066px;
 $max-skills-width: 500px;
 $nav-text-padding: 1.2rem;
@@ -277,7 +278,6 @@ body {
         flex-direction: row;
         flex-grow: 1;
         flex-wrap: wrap;
-        //justify-content: center;
 
         /* Skill type child containers */
         .skill-type {
@@ -320,6 +320,55 @@ body {
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  .projects {
+    max-width: $max-content-width;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 2em;
+
+    h2 {
+      position: relative;
+
+      &:after {
+        display: block;
+        content: '';
+        width: 7.5%;
+        margin-left: 46.25%;
+        margin-bottom: -5px;
+        height: 2px;
+        background: $primary;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+    .projects-main {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .project-section {
+        flex-direction: column;
+        flex: 33.3%;
+        flex-grow: 0;
+        padding-bottom: 4em;
+
+        img {
+          height: auto;
+          width: 90%;
         }
       }
     }
@@ -395,6 +444,46 @@ body {
         max-width: $max-skills-width;
         margin-left: auto;
         margin-right: auto;
+      }
+    }
+
+    .projects {
+      h2 {
+        position: relative;
+
+        &:after {
+          display: block;
+          content: '';
+          width: 15%;
+          margin-left: 42.5%;
+          margin-bottom: -5px;
+          height: 2px;
+          background: $primary;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
+      .projects-main {
+
+        .project-section {
+          flex: 70%;
+          flex-grow: 0;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-phone) {
+    .projects {
+
+      .projects-main {
+
+        .project-section {
+          flex: 100%;
+          flex-grow: 0;
+        }
       }
     }
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Feature from './../components/Feature';
 import SubFeature from './../components/SubFeature';
+import Projects from './../components/Projects';
 import Footer from './../components/Footer';
 
 class Main extends Component {
@@ -9,6 +10,7 @@ class Main extends Component {
       <div>
         <Feature />
         <SubFeature />
+        <Projects />
         <Footer />
       </div>
     );
