@@ -272,6 +272,23 @@ body {
         border: 1px solid $secondary;
       }
 
+      .contact-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .devicon, .material-icons {
+          font-size: 4em;
+          padding: .2em;
+          color: $secondary;
+
+          &:hover {
+            color: $primary-accent;
+          }
+        }
+      }
+
       /* Skill types parent container */
       .skills-main {
         display: flex;

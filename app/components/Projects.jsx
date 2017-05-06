@@ -27,7 +27,7 @@ class Projects extends Component {
               <a href='http://www.duospell.com/' target='blank'>
                 <div className='project-img-overlay'>
                   <i className='material-icons'>visibility</i>
-                  <span>View project</span>
+                  <span>View on GitHub</span>
                 </div>
               </a>
             </div>

@@ -7,7 +7,7 @@ import Footer from './../components/Footer';
 class Main extends Component {
   render() {
     return (
-      <div>
+      <div className='main'>
         <Feature />
         <SubFeature />
         <Projects />

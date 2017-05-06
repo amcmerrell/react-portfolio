@@ -4,11 +4,6 @@ import andrew from './../img/am_landscape.jpg';
 
 class SubFeature extends Component {
 
-  renderDevIcons() {
-
-  }
-
-
   render() {
     const javaIconClass = classNames('devicon', 'devicon-java-plain', 'colored');
     const javaScriptIconClass = classNames('devicon', 'devicon-javascript-plain', 'colored');
@@ -21,14 +16,19 @@ class SubFeature extends Component {
 
     const nodeIconClass = classNames('devicon', 'devicon-nodejs-plain', 'colored');
     const postgresIconClass = classNames('devicon', 'devicon-postgresql-plain', 'colored');
+    const gitHubIconClass = classNames('devicon', 'devicon-github-plain');
 
     return (
-
       <div className='subfeature-container'>
         <div className='subfeature-section'>
-          <h2>About</h2>
+          <h2>About Me</h2>
           <img alt='Andrew Merrell' src={andrew} />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus nisi eu neque cursus rhoncus. Maecenas interdum ullamcorper accumsan. Duis sem orci, pretium pretium consectetur a, eleifend eu lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          <p>I&#39;m Digital Producer turned Software Developer, with 6 years of experience in the digital space. In my previous roles, I&#39;ve developed digital strategy for clients at a music business start-up in Nashville, managed content production for Nike.com, and led a team of 10 at a digital agency in Portland. Now, I'm pursuing my passion for building great products as a Mobile & Front-end Developer.</p>
+          <p>Want to learn more? Check out my work or or feel free to reach out.</p>
+          <div className='contact-icons'>
+            <i className='material-icons'>email</i>
+            <i className={gitHubIconClass} />
+          </div>
         </div>
 
         <div className='subfeature-section'>
