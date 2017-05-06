@@ -19,6 +19,8 @@ class Feature extends Component {
   }
 
   render() {
+    const gitHubIconClass = classNames('devicon', 'devicon-github-plain', 'colored');
+
     const featureContainerClasses = classNames({
       'feature-container': true,
       'parallax': true
@@ -34,9 +36,17 @@ class Feature extends Component {
         <VisibilitySensor onChange={this.onChange} />
 
           <div className={featureClasses}>
-            
+
             <h1>Andrew Merrell</h1>
             <h3>Software Developer</h3>
+              <div className='contact-icons'>
+                <a href='mailto:andrew.m.merrell@gmail.com'>
+                  <i className='material-icons'>email</i>
+                </a>
+                <a href='https://github.com/amcmerrell' target='blank'>
+                  <i className={gitHubIconClass} />
+                </a>
+              </div>
           </div>
 
       </div>

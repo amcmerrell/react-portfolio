@@ -16,7 +16,7 @@ class SubFeature extends Component {
 
     const nodeIconClass = classNames('devicon', 'devicon-nodejs-plain', 'colored');
     const postgresIconClass = classNames('devicon', 'devicon-postgresql-plain', 'colored');
-    const gitHubIconClass = classNames('devicon', 'devicon-github-plain');
+
 
     return (
       <div className='subfeature-container'>
@@ -24,11 +24,13 @@ class SubFeature extends Component {
           <h2>About Me</h2>
           <img alt='Andrew Merrell' src={andrew} />
           <p>I&#39;m Digital Producer turned Software Developer, with 6 years of experience in the digital space. In my previous roles, I&#39;ve developed digital strategy for clients at a music business start-up in Nashville, managed content production for Nike.com, and led a team of 10 at a digital agency in Portland. Now, I'm pursuing my passion for building great products as a Mobile & Front-end Developer.</p>
-          <p>Want to learn more? Check out my work or or feel free to reach out.</p>
-          <div className='contact-icons'>
-            <i className='material-icons'>email</i>
-            <i className={gitHubIconClass} />
-          </div>
+          <p>Want to learn more? Check out my work or feel free to reach out.</p>
+          <a href='mailto:andrew.m.merrell@gmail.com'>
+            <div className='contact-icons'>
+              <i className='material-icons'>email</i>
+              <span>andrew.m.merrell@gmail.com</span>
+            </div>
+          </a>
         </div>
 
         <div className='subfeature-section'>

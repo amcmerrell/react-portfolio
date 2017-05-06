@@ -214,6 +214,27 @@ body {
         transition: opacity 1500ms ease-in;
       }
 
+      .contact-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        a:-webkit-any-link {
+          text-decoration: none;
+        }
+
+        .devicon, .material-icons {
+          font-size: 4em;
+          padding: .2em;
+          color: $background;
+
+          &:hover {
+            color: $primary-accent;
+          }
+        }
+      }
+
       img {
         height: 20em;
         width: 20em;
@@ -277,16 +298,24 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+      }
 
-        .devicon, .material-icons {
-          font-size: 4em;
-          padding: .2em;
-          color: $secondary;
+      a {
+        text-decoration: none;
+        color: $primary;
 
-          &:hover {
-            color: $primary-accent;
-          }
+        &:hover {
+          color: $primary-accent;
         }
+      }
+
+      span {
+        font-size: 1.5em;
+        padding-left: .2em;
+      }
+
+      .material-icons {
+        font-size: 2em;
       }
 
       /* Skill types parent container */
