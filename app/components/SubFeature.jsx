@@ -86,7 +86,7 @@ class SubFeature extends Component {
             </div>
 
             <div className='skill-type'>
-              <h3>Backend</h3>
+              <h3>Back-end</h3>
               <div className='skills-container'>
                 <div className='skill-label'>
                   <i className={postgresIconClass} />

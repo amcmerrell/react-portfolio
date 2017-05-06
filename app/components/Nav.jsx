@@ -31,12 +31,16 @@ class Nav extends Component {
   onNavClick(element, e) {
     const home = document.querySelector('.feature-container');
     const subFeature = document.querySelector('.subfeature-container');
+    const projects = document.querySelector('.projects');
 
     if (element === 'home') {
       SmoothScroll(home, 1500);
       this.setState({ isMobileNavOpen: false });
     } else if (element === 'subFeature') {
       SmoothScroll(subFeature, 1500);
+      this.setState({ isMobileNavOpen: false });
+    } else if (element === 'projects') {
+      SmoothScroll(projects, 1500);
       this.setState({ isMobileNavOpen: false });
     }
 
@@ -86,6 +90,9 @@ class Nav extends Component {
           </li>
           <li>
             <a ref='subFeature' onClick={this.onNavClick.bind(this, 'subFeature')}>About</a>
+          </li>
+          <li>
+            <a ref='projects' onClick={this.onNavClick.bind(this, 'projects')}>Projects</a>
           </li>
         </ul>
       </nav>

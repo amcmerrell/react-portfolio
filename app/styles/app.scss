@@ -361,14 +361,39 @@ body {
       flex-wrap: wrap;
 
       .project-section {
+        position: relative;
         flex-direction: column;
+        justify-content: center;
         flex: 33.3%;
         flex-grow: 0;
         padding-bottom: 4em;
 
-        img {
-          height: auto;
+        .project-image {
+          display: flex;
+          position: relative;
+          margin-left: 5%;
           width: 90%;
+        }
+
+        .project-img-overlay {
+          background-color: #000;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+
+          &:hover {
+            transition: opacity 1s;
+            opacity: .7
+          }
+        }
+
+        img {
+          height: 100%;
+          width: 100%;
+          box-shadow: 5px 5px 5px grey;
         }
       }
     }
@@ -403,7 +428,7 @@ body {
       }
 
       .animate-nav-height {
-        height: 8rem;
+        height: 12rem;
         transition: height 1s;
       }
 

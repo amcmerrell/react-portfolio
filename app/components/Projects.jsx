@@ -8,15 +8,25 @@ class Projects extends Component {
         <h2>Projects</h2>
         <div className='projects-main'>
           <div className='project-section'>
-            <img alt='Duo Spell' src={duospell} />
+            <div className='project-image'>
+              <img alt='Duo Spell' src={duospell} />
+              <div className='project-img-overlay'></div>
+            </div>
             <h4>Duo Spell</h4>
             <p>Duo Spell is a multiplayer application developed with React Native for both iOS and Android. In addition, Duo Spell leverages Node.JS/Express for both user authentication and real-time communication API.</p>
+
           </div>
           <div className='project-section'>
-            <img alt='Duospell' src={duospell} />
+            <div className='project-image'>
+              <img alt='Duo Spell' src={duospell} />
+              <div className='project-img-overlay'></div>
+            </div>
           </div>
           <div className='project-section'>
-            <img alt='Duospell' src={duospell} />
+            <div className='project-image'>
+              <img alt='Duo Spell' src={duospell} />
+              <div className='project-img-overlay'></div>
+            </div>
           </div>
         </div>
       </div>
