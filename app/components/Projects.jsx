@@ -32,19 +32,9 @@ class Projects extends Component {
               </a>
             </div>
             <h4>Neighborly PDX</h4>
-            <p>Neighborly PDX is a web application that allows users to easily find reviews and other info on Portland neighborhoods. It uses the Ember front-end framework, as well as several Web API's and Firebase database to handle data persistance.</p>
+            <p>Neighborly PDX is a web application that allows users to easily find reviews and other info on Portland neighborhoods. It uses the Ember front-end framework, as well as several Web API's and Firebase to handle data persistance.</p>
           </div>
-          <div className='project-section'>
-            <div className='project-image'>
-              <img alt='Duo Spell' src={duospell} />
-                <a href='http://www.duospell.com/' target='blank'>
-                  <div className='project-img-overlay'>
-                    <i className='material-icons'>visibility</i>
-                    <span>View project</span>
-                  </div>
-                </a>
-            </div>
-          </div>
+          
         </div>
       </div>
     );
