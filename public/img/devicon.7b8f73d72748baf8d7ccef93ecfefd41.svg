@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "./fonts/devicon.5dfbc0929b94a156edb6865457738032.svg";
