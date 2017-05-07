@@ -1,5 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './app/app.jsx',
@@ -30,6 +31,16 @@ module.exports = {
         },
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
+      },
+      {
+        test: /favicon\.ico$/,
+        use: [{
+          loader: 'file-loader',
+          query: {
+            limit: 1,
+            name: '[name].[ext]',
+          }
+        }]
       },
       {
         test: /\.(jpg|png|svg)$/,
@@ -93,6 +104,13 @@ module.exports = {
       },
     ]
   },
-  plugins: [new ExtractTextPlugin('style.css')],
+  plugins: [
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: './app/index.html',
+      favicon: path.join(__dirname, '/app/favicon.ico')
+    }),
+    new ExtractTextPlugin('style.css')
+  ],
   devtool: 'cheap-module-eval-source'
 };

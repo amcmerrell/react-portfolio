@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import VisibilitySensor from 'react-visibility-sensor';
-import andrew from './../img/portfolio-andrew.png';
-import plaid from './../img/am-logo-plaid.png';
-import checker from './../img/am-logo-checker.png';
 
 class Feature extends Component {
   constructor(props) {
