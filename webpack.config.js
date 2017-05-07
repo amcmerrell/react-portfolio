@@ -1,6 +1,7 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 module.exports = {
   entry: './app/app.jsx',
@@ -108,8 +109,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       template: './app/index.html',
-      favicon: path.join(__dirname, '/app/favicon.ico')
     }),
+    new FaviconsWebpackPlugin('./app/img/am-logo.png'),
     new ExtractTextPlugin('style.css')
   ],
   devtool: 'cheap-module-eval-source'
