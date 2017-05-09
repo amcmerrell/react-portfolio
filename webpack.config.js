@@ -1,4 +1,6 @@
 const path = require('path');
+const webpack = require('webpack');
+const CompressionPlugin = require('compression-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
@@ -111,7 +113,21 @@ module.exports = {
       template: './app/index.html',
     }),
     new FaviconsWebpackPlugin('./app/img/am-logo.png'),
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin('style.css'),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.AggressiveMergingPlugin(),
+    new CompressionPlugin({
+      asset: '[path].gz[query]',
+      algorithm: 'gzip',
+      test: /\.js$|\.css$|\.html$/,
+      threshold: 10240,
+      minRatio: 0.8
+    })
   ],
   devtool: 'cheap-module-eval-source'
 };
