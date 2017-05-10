@@ -30,7 +30,8 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: ['css-loader', 'postcss-loader', 'sass-loader']
-        })
+        }),
+        exclude: /node_modules/
       },
       {
         loader: 'babel-loader',

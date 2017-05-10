@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import duospell from './../img/duospell.png';
-import neighborly from './../img/neighborly.png';
+import duospell from './../img/duospell.jpg';
+import neighborly from './../img/neighborly.jpg';
 
 class Projects extends Component {
   render() {
