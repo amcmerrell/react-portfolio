@@ -59,6 +59,10 @@ module.exports = {
         }]
       },
       {
+        test: /\.(webapp)$/,
+        loader: 'ignore-loader'
+      },
+      {
         test: /\.(jpg|png|svg)$/,
         loader: 'file-loader',
         options: {
@@ -135,6 +139,7 @@ module.exports = {
       logo: './app/img/am-logo.png',
       prefix: 'icons/',
       emitStats: false,
+      persistentCache: false
     }),
     new ExtractTextPlugin('style.css'),
     new OptimizeCssAssetsPlugin(),
