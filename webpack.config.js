@@ -62,7 +62,8 @@ module.exports = {
         test: /\.(jpg|png|svg)$/,
         loader: 'file-loader',
         options: {
-          name: './img/[name].[hash].[ext]',
+          name: './img/[name].[ext]',
+          //name: './img/[name].[hash].[ext]',
         }
       },
       {
@@ -71,7 +72,8 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 10000,
-              name: './fonts/[name].[hash].[ext]'
+              name: './fonts/[name].[ext]'
+              //name: './fonts/[name].[hash].[ext]'
             }
           }],
       },
@@ -81,7 +83,8 @@ module.exports = {
           loader: 'url-loader',
           options: {
             limit: 10000,
-            name: './fonts/[name].[hash].[ext]'
+            name: './fonts/[name].[ext]'
+            //name: './fonts/[name].[hash].[ext]'
           }
         }]
       },
@@ -92,7 +95,8 @@ module.exports = {
           options: {
             mimetype: 'image/svg+xml',
             limit: 10000,
-            name: './fonts/[name].[hash].[ext]'
+            name: './fonts/[name].[ext]'
+            //name: './fonts/[name].[hash].[ext]'
           }
         }]
       },
@@ -103,7 +107,8 @@ module.exports = {
           options: {
             mimetype: 'application/octet-stream',
             limit: 10000,
-            name: './fonts/[name].[hash].[ext]'
+            name: './fonts/[name].[ext]'
+            //name: './fonts/[name].[hash].[ext]'
           }
         }]
       },
@@ -114,7 +119,8 @@ module.exports = {
           options: {
             mimetype: 'application/font-woff',
             limit: 10000,
-            name: './fonts/[name].[hash].[ext]'
+            name: './fonts/[name].[ext]'
+            //name: './fonts/[name].[hash].[ext]'
           }
         }]
       },
@@ -125,7 +131,10 @@ module.exports = {
       hash: true,
       template: './app/index.html',
     }),
-    new FaviconsWebpackPlugin('./app/img/am-logo.png'),
+    new FaviconsWebpackPlugin({
+      logo: './app/img/am-logo.png',
+      prefix: 'icons/'
+    }),
     new ExtractTextPlugin('style.css'),
     new OptimizeCssAssetsPlugin(),
     new webpack.DefinePlugin({
