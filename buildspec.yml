@@ -7,5 +7,5 @@ phases:
       - npm run webpack
 artifacts:
   files:
-    - **/*
+    - '**/*'
   base-directory: public
