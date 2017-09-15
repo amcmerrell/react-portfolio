@@ -7,9 +7,9 @@ phases:
       - npm run webpack
 artifacts:
   files:
-    - /fonts/*
-    - /img/*
-    - /icons/*
+    - fonts/*
+    - img/*
+    - icons/*
     - bundle.js
     - index.html
     - style.css
