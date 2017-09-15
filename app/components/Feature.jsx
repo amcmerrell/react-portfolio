@@ -30,7 +30,7 @@ class Feature extends Component {
 
     return (
       <div className={featureContainerClasses}>
-        <VisibilitySensor onChange={this.onChange} />
+        <VisibilitySensor onChange={this.onChange.bind(this)} />
 
           <div className={featureClasses}>
 
