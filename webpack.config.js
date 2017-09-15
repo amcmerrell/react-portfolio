@@ -26,6 +26,13 @@ module.exports = {
   module: {
     rules: [
       {
+          test: /\.(txt)$/,
+          loader: 'static-loader',
+          options: {
+            name: '[name].[ext]',
+          }
+      },
+      {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
