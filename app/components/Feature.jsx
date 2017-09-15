@@ -11,7 +11,7 @@ class Feature extends Component {
     this.onChange = this.onChange.bind(this);
   }
 
-  onChange = (isVisible) => {
+  onChange(isVisible) {
     this.setState({ isVisible });
   }
 
