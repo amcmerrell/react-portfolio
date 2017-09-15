@@ -133,7 +133,8 @@ module.exports = {
     }),
     new FaviconsWebpackPlugin({
       logo: './app/img/am-logo.png',
-      prefix: 'icons/'
+      prefix: 'icons/',
+      emitStats: false,
     }),
     new ExtractTextPlugin('style.css'),
     new OptimizeCssAssetsPlugin(),
